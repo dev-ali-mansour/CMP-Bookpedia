@@ -134,13 +134,13 @@ fun BookListItem(
                         )
                     }
                 }
-                Icon(
-                    imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
-                    contentDescription = null,
-                    modifier = Modifier
-                        .size(36.dp)
-                )
             }
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                contentDescription = null,
+                modifier = Modifier
+                    .size(36.dp)
+            )
         }
     }
 }
