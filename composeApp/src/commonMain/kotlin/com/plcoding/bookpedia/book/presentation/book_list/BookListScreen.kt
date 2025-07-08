@@ -242,12 +242,29 @@ private fun BookListScreen(
     }
 }
 
+private val books = (1..100).map {
+    Book(
+        id = it.toString(),
+        title = "Book $it",
+        imageUrl = "https://test.com",
+        authors = listOf("Philipp Lackner"),
+        description = "Description $it",
+        languages = emptyList(),
+        firstPublishYear = null,
+        averageRating = 4.67865,
+        ratingsCount = 5,
+        numPages = 100,
+        numEditions = 3
+    )
+}
+
 @Preview
 @Composable
 private fun BookListScreenPreview() {
     BookListScreen(
         state = BookListState(
-            searchResults = books
+            searchResults = books,
+            isLoading = false,
         ),
         onAction = {}
     )
