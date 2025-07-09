@@ -1,6 +1,7 @@
 package com.plcoding.bookpedia.book.data.database
 
 import androidx.room.TypeConverter
+import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 
 object StringListTypeConverter {
