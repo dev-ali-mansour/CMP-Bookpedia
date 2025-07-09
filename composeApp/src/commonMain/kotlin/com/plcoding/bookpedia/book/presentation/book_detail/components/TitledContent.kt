@@ -10,8 +10,8 @@ import androidx.compose.ui.Modifier
 @Composable
 fun TitledContent(
     title: String,
-    content: @Composable () -> Unit,
     modifier: Modifier = Modifier,
+    content: @Composable () -> Unit,
 ) {
     Column(
         modifier = modifier,
