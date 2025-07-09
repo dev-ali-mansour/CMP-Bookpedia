@@ -126,7 +126,7 @@ fun BookListItem(
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Text(
-                            text = "${round(rating * 10 / 10.0)}",
+                            text = "${round(rating * 10) / 10.0}",
                             style = MaterialTheme.typography.bodyMedium,
                         )
                         Icon(
